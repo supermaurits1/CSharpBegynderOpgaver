@@ -6,7 +6,7 @@
 
 
 Random random = new Random();
-int Resultat = random.Next(0, 101); //Generere et random tal imellem 0 og 100. (0 er med, men 101 er ikke)
+int Resultat = random.Next(0, 6); //Generere et random tal imellem 0 og 5. (0 er med, men 6 er ikke)
 Console.WriteLine(Resultat);
 
 
