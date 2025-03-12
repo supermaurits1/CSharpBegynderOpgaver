@@ -5,34 +5,58 @@
 
 
 
+//Random random = new Random();
+//int Resultat = random.Next(0, 6); //Generere et random tal imellem 0 og 5. (0 er med, men 6 er ikke)
+//Console.WriteLine(Resultat);
+
+
+
+
+
+
+using System.ComponentModel.Design;
+
 Random random = new Random();
-int Resultat = random.Next(0, 6); //Generere et random tal imellem 0 og 5. (0 er med, men 6 er ikke)
-Console.WriteLine(Resultat);
 
+int Resultat = random.Next(1, 6); //Generere et random tal imellem 1 og 5. (1 er med, men 6 er ikke)
+int input = Convert.ToInt32(Console.ReadLine());
 
+Console.WriteLine("input");
 
-
-int a = 1;
-int b = 2;
-//Dette er if statements og bruges til at sammenligne værdier, det skal bruges til spillet.
-if(a > b)
+if (input == Resultat) 
 {
-	Console.WriteLine("A er større end B");
-}
-else if(a < b)
-{
-	Console.WriteLine("A er mindre end B");
+    Console.WriteLine("RGTIGT");
 }
 else
 {
-	Console.WriteLine("A og B er ens!");
+    Console.WriteLine("Resultat");
 }
 
 
-//En Console.ReadLine() returnere altid en streng, hvis vi skal lave den om til en int er vi nødt til at pakke det ind i Convert.ToInt()
-Console.WriteLine("Indtast et tal:");
-int input = Convert.ToInt32(Console.ReadLine()); //Det giver altså en fejl hvis vi taster noget ind som IKKE er et tal!
-Console.WriteLine(input); //Udskriv inputtet.
+Console.ReadLine();
 
 
-Console.ReadKey();
+//int a = 1;
+//int b = 2;
+////Dette er if statements og bruges til at sammenligne værdier, det skal bruges til spillet.
+//if(a > b)
+//{
+//	Console.WriteLine("A er større end B");
+//}
+//else if(a < b)
+//{
+//	Console.WriteLine("A er mindre end B");
+//}
+//else
+//{
+//	Console.WriteLine("A og B er ens!");
+//}
+
+
+////En Console.ReadLine() returnere altid en streng, hvis vi skal lave den om til en int er vi nødt til at pakke det ind i Convert.ToInt()
+//Console.WriteLine("Indtast et tal:");
+//int input = Convert.ToInt32(Console.ReadLine()); //Det giver altså en fejl hvis vi taster noget ind som IKKE er et tal!
+//Console.WriteLine(input); //Udskriv inputtet.
+
+
+//Console.ReadKey();

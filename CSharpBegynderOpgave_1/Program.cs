@@ -8,7 +8,7 @@ Console.BackgroundColor = ConsoleColor.Green;
 Console.Clear();
 Console.BackgroundColor = ConsoleColor.DarkBlue;
 Console.WriteLine("==============================================================");
-Console.WriteLine("                      hej                                        ");
+Console.WriteLine("                      hej                                     ");
 Console.WriteLine("==============================================================");
 Console.ReadKey(); // Venter på brugerinput, før programmet lukker 
 
