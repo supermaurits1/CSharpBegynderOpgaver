@@ -16,24 +16,29 @@
 
 using System.ComponentModel.Design;
 
+Console.WriteLine("Indtast et tal mellem 1 og 5");
+
 Random random = new Random();
 
-int Resultat = random.Next(1, 6); //Generere et random tal imellem 1 og 5. (1 er med, men 6 er ikke)
+int Resultat = random.Next(1, 6); 
 int input = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine("input");
 
 if (input == Resultat) 
 {
-    Console.WriteLine("RGTIGT");
+    Console.WriteLine("RIGTIGT");
 }
-else
+else if (input > Resultat)
 {
-    Console.WriteLine("Resultat");
+    Console.WriteLine("hehehehehe du gættede forkert");
 }
-
+else 
+{
+    Console.WriteLine("du gættede forkert");
+}
 
 Console.ReadLine();
+
+
 
 
 //int a = 1;
